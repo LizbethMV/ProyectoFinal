@@ -1,0 +1,40 @@
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\bin\Debug\ProyectoFinal.exe
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\MainWindow.baml
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\Productosxaml.baml
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\Proveedor.baml
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\MainWindow.g.cs
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\Productosxaml.g.cs
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\Proveedor.g.cs
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\App.g.cs
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\ProyectoFinal_MarkupCompile.cache
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\ProyectoFinal.g.resources
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\ProyectoFinal.Properties.Resources.resources
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.Cache
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\ProyectoFinal.exe
+C:\Users\alumno15\AppData\Local\Temporary Projects\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe.config
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.exe
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.pdb
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.exe
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\bin\Debug\ProyectoFinal.pdb
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.dll
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.xml
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\Compras.baml
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\MainWindow.baml
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\Productosxaml.baml
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\Proveedor.baml
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\Compras.g.cs
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\MainWindow.g.cs
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\Productosxaml.g.cs
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\Proveedor.g.cs
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\App.g.cs
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal_MarkupCompile.cache
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.g.resources
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Properties.Resources.resources
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.Cache
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.all.resources
