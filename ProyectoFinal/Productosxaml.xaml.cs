@@ -1,4 +1,4 @@
-﻿//using proyecto.New_bd;
+﻿using ProyectoFinal.MiBD;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-//using System.Text.RegularExpressions;
+using System.Text.RegularExpressions;
+
 namespace ProyectoFinal
 {
     /// <summary>
@@ -27,20 +28,20 @@ namespace ProyectoFinal
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ////if (Regex.IsMatch(txtnom.Text, "^[a-zA-Z]+$") && (Regex.IsMatch(txtci.Text, "^[a-zA-Z]+$")
-            //    && (Regex.IsMatch(txtdire.Text, "^[a-zA-Z]+$"))))
-            //{
-            //    bdPrincipal bd = new bdPrincipal();
-            //    proyecto.New_bd.Proveedor pro = new proyecto.New_bd.Proveedor();
-            //    pro.Nombre = txtnom.Text;
-            //    pro.Ciudad = txtci.Text;
-            //    pro.Direccion = txtdire.Text;
-            //    bd.Proveedores.Add(pro);
-            //    bd.SaveChanges();
-            //    MessageBox.Show("Datos guardados exitosamente");
-            //}
-            //else { MessageBox.Show("Datos no validos"); 
-            //}
+            if (Regex.IsMatch(txtno.Text, "^[a-zA-Z] +$") && (Regex.IsMatch(txtCa.Text, "^[a-zA-Z]+$")
+                && (Regex.IsMatch(txtCan.Text, @"^\d+$"))))
+            {
+                bdPrincipal bd = new bdPrincipal();
+                Productos t = new Productos();
+                t.NombreProdu = txtno.Text;
+                t.Categoria = txtCa.Text;
+                t.Cantidad = int.Parse(txtCan.Text);
+                bd.producto.Add(t);
+                bd.SaveChanges();
+                MessageBox.Show("Datos Exitosamente almacenados");
+            } else {
+                MessageBox.Show("Datos incorrectos"); 
+            }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Proveedor" Height="300" Width="300">
     <Grid>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="24,49,0,0" VerticalAlignment="Top"/>
-        <Label Content="Ciudad:" HorizontalAlignment="Left" Margin="24,80,0,0" VerticalAlignment="Top"/>
-        <Label Content="Telefono:" HorizontalAlignment="Left" Margin="24,124,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="119,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+        <Label x:Name="Nombre" Content="Nombre:" HorizontalAlignment="Left" Margin="24,49,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ciu" Content="Ciudad:" HorizontalAlignment="Left" Margin="24,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tel" Content="Telefono:" HorizontalAlignment="Left" Margin="24,124,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtnom" HorizontalAlignment="Left" Height="23" Margin="119,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -16,8 +16,10 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="120,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCi" HorizontalAlignment="Left" Height="23" Margin="120,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTel" HorizontalAlignment="Left" Height="23" Margin="120,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="24,172,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Continuar" HorizontalAlignment="Left" Margin="148,172,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
 
     </Grid>
 </Window>

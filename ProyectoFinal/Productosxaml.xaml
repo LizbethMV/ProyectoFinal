@@ -6,9 +6,9 @@
         <Label Content="Nombre:" HorizontalAlignment="Left" Margin="27,50,0,0" VerticalAlignment="Top"/>
         <Label Content="Categoria:" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
         <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="27,137,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="124,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="124,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="124,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtno" HorizontalAlignment="Left" Height="23" Margin="124,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCa" HorizontalAlignment="Left" Height="23" Margin="124,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCan" HorizontalAlignment="Left" Height="23" Margin="124,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Productos" HorizontalAlignment="Left" Margin="124,10,0,0" VerticalAlignment="Top"/>
         <Button Content="Guardar" HorizontalAlignment="Left" Margin="113,192,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <Button Content="Salir" HorizontalAlignment="Left" Margin="113,217,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>

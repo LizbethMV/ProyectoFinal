@@ -4,18 +4,13 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Label Content="Registro" HorizontalAlignment="Left" Margin="213,10,0,0" VerticalAlignment="Top" Width="96"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="189,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="189,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNom" HorizontalAlignment="Left" Height="23" Margin="189,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCon" HorizontalAlignment="Left" Height="23" Margin="189,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Registrarse" HorizontalAlignment="Left" Margin="213,210,0,0" VerticalAlignment="Top" Width="96" Height="27"/>
         <Button Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="213,154,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click_1" Height="30"/>
         <Label Content="Usuario:" HorizontalAlignment="Left" Margin="85,56,0,0" VerticalAlignment="Top"/>
         <Label Content="Contraseña:" HorizontalAlignment="Left" Margin="85,100,0,0" VerticalAlignment="Top"/>
-        <Image Margin="343,112,10,10" Source="provedor.jpg" Stretch="Fill"/>
-        <Image Margin="343,112,10,10" Source="provedor.jpg" Stretch="Fill"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="389,184,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image Margin="343,112,10,10" Source="provedor.jpg" Stretch="Fill"/>
-        <Image Margin="343,112,10,10" Source="provedor.jpg" Stretch="Fill"/>
-        <Image Margin="343,112,10,10" Source="provedor.jpg" Stretch="Fill"/>
 
     </Grid>
 </Window>

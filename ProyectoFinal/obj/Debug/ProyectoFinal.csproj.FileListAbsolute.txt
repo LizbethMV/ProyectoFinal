@@ -38,3 +38,4 @@ C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFi
 C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Properties.Resources.resources
 C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csproj.GenerateResource.Cache
 C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.Migrations.all.resources
+C:\Users\alumno15\Desktop\Final\ProyectoFinal\ProyectoFinal\obj\Debug\ProyectoFinal.csprojResolveAssemblyReference.cache
