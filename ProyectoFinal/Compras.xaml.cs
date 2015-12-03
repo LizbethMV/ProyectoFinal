@@ -54,5 +54,24 @@ namespace ProyectoFinal
             //}
             //else { MessageBox.Show("Solo numeros #id"); }
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            //Borra
+            if (Regex.IsMatch(txtnew.Text, @"^[a-zA-Z]+$") && (Regex.IsMatch(txtpro.Text, @"^[z-zA-Z]+$"))){
+            if (Regex.IsMatch(txtcan.Text, @"\d+$")){
+                bdPrincipal db = new bdPrincipal();
+                int cant = int.Parse(txtcan.Text);
+                var prod = db.producto
+                    .SingleOrDefault(x=> x.Cantidad == cant);
+                if (prod != null){
+                    db.producto.Remove(prod);
+                    db.SaveChanges();
+                      }
+                   }
+              else { MessageBox.Show("solo letras en #proveedor y #producto"); }
+            }
+            else { MessageBox.Show("Verifique que solo sean numeros en #cantidad"); } 
+        }
     }
 }

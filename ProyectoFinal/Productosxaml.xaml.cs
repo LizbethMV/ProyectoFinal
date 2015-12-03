@@ -28,20 +28,43 @@ namespace ProyectoFinal
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (Regex.IsMatch(txtno.Text, "^[a-zA-Z] +$") && (Regex.IsMatch(txtCa.Text, "^[a-zA-Z]+$")
+            if (Regex.IsMatch(txtno.Text, "^[a-zA-Z+$") && (Regex.IsMatch(txtCa.Text, "^[a-zA-Z]+$")
                 && (Regex.IsMatch(txtCan.Text, @"^\d+$"))))
             {
                 bdPrincipal bd = new bdPrincipal();
-                Productos t = new Productos();
-                t.NombreProdu = txtno.Text;
-                t.Categoria = txtCa.Text;
-                t.Cantidad = int.Parse(txtCan.Text);
-                bd.producto.Add(t);
+                ProyectoFinal.MiBD.Productos ar = new ProyectoFinal.MiBD.Productos();
+                ar.NombreProdu = txtno.Text;
+                ar.Categoria = txtCa.Text;
+                ar.Cantidad = int.Parse(txtCan.Text);
+                bd.producto.Add(ar);
                 bd.SaveChanges();
-                MessageBox.Show("Datos Exitosamente almacenados");
-            } else {
-                MessageBox.Show("Datos incorrectos"); 
+                MessageBox.Show("Datos almacenados correctamente");
             }
+            else
+            {
+                MessageBox.Show("datos no validos");
+            }
+
+                //infoanterior
+            //if (Regex.IsMatch(txtno.Text, "^[a-zA-Z] +$") && (Regex.IsMatch(txtCa.Text, "^[a-zA-Z]+$")
+            //    && (Regex.IsMatch(txtCan.Text, @"^\d+$"))))
+            //{
+            //    bdPrincipal bd = new bdPrincipal();
+            //    Productos t = new Productos();
+            //    t.NombreProdu = txtno.Text;
+            //    t.Categoria = txtCa.Text;
+            //    t.Cantidad = int.Parse(txtCan.Text);
+            //    bd.producto.Add(t);
+            //    bd.SaveChanges();
+            //    MessageBox.Show("Datos Exitosamente almacenados");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Datos incorrectos");
+            //}
+            //Compras bv = new Compras();
+            //bv.Show();
+            //this.Close();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

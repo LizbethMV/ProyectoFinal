@@ -3,15 +3,19 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Productosxaml" Height="300" Width="300">
     <Grid>
-        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="27,50,0,0" VerticalAlignment="Top"/>
-        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="27,137,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtno" HorizontalAlignment="Left" Height="23" Margin="124,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCa" HorizontalAlignment="Left" Height="23" Margin="124,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCan" HorizontalAlignment="Left" Height="23" Margin="124,137,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Productos" HorizontalAlignment="Left" Margin="124,10,0,0" VerticalAlignment="Top"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="113,192,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Salir" HorizontalAlignment="Left" Margin="113,217,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="256*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="27,36.701,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="23,80.701,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="27,123.701,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="txtno" HorizontalAlignment="Left" Height="23" Margin="124,36.701,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <TextBox x:Name="txtCa" HorizontalAlignment="Left" Height="23" Margin="124,80.701,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <TextBox x:Name="txtCan" HorizontalAlignment="Left" Height="23" Margin="124,123.701,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <Label Content="Productos" HorizontalAlignment="Left" Margin="124,10,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="113,178.701,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Grid.Row="1"/>
+        <Button Content="Salir" HorizontalAlignment="Left" Margin="113,203.701,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2" Grid.Row="1"/>
 
     </Grid>
 </Window>

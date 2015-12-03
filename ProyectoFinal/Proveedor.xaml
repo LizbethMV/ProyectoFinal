@@ -18,8 +18,9 @@
         </TextBox>
         <TextBox x:Name="txtCi" HorizontalAlignment="Left" Height="23" Margin="120,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtTel" HorizontalAlignment="Left" Height="23" Margin="120,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="24,172,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Button Content="Continuar" HorizontalAlignment="Left" Margin="148,172,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="40,172,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Button Content="Continuar" HorizontalAlignment="Left" Margin="165,172,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Label Content="Proveedor" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="98"/>
 
     </Grid>
 </Window>
