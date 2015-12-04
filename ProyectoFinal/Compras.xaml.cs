@@ -37,7 +37,19 @@ namespace ProyectoFinal
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             //Actualiza
-            //if (Regex.IsMatch(txtpro.Text, "^[
+            if (Regex.IsMatch(txtid.Text, @"^\d+$"))
+            {
+                bdPrincipal db = new bdPrincipal();
+                int id = int.Parse(txtid.Text);
+                var ar = db.producto
+                    .SingleOrDefault(x => x.idPro == id);
+                if (ar != null)
+                {
+
+                    db.producto.Add(ar);
+                    db.SaveChanges();
+                }
+            }
             //if (Regex.IsMatch(txtId.Text, @"\d+$"))
             //{
             //    demoEF db = new demoEF();
@@ -58,7 +70,7 @@ namespace ProyectoFinal
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             //Borra
-            if (Regex.IsMatch(txtnew.Text, @"^[a-zA-Z]+$") && (Regex.IsMatch(txtpro.Text, @"^[z-zA-Z]+$"))){
+            if (Regex.IsMatch(txtnew.Text, @"^[a-zA-Z]+$")){
             if (Regex.IsMatch(txtcan.Text, @"\d+$")){
                 bdPrincipal db = new bdPrincipal();
                 int cant = int.Parse(txtcan.Text);
@@ -69,9 +81,26 @@ namespace ProyectoFinal
                     db.SaveChanges();
                       }
                    }
-              else { MessageBox.Show("solo letras en #proveedor y #producto"); }
+              else { MessageBox.Show("solo letras en  #producto"); }
             }
-            else { MessageBox.Show("Verifique que solo sean numeros en #cantidad"); } 
+            else { MessageBox.Show("Solo numeros en #cantidad"); }
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            bdPrincipal bd = new bdPrincipal();
+            int id = int.Parse(txtid.Text);
+            var registros = from s in bd.producto
+                            where s.idPro == id
+                            select new
+                            {
+                                s.idPro,
+                                s.NombreProdu,
+                                s.Categoria,
+                                s.Cantidad,
+                                
+                            };
+            dbgrid.ItemsSource = registros.ToList();
         }
     }
 }

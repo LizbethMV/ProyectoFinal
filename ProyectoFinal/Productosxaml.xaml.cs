@@ -28,7 +28,7 @@ namespace ProyectoFinal
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (Regex.IsMatch(txtno.Text, "^[a-zA-Z+$") && (Regex.IsMatch(txtCa.Text, "^[a-zA-Z]+$")
+            if (Regex.IsMatch(txtno.Text, "^[a-zA-Z]+$") && (Regex.IsMatch(txtCa.Text, "^[a-zA-Z]+$")
                 && (Regex.IsMatch(txtCan.Text, @"^\d+$"))))
             {
                 bdPrincipal bd = new bdPrincipal();
@@ -44,6 +44,10 @@ namespace ProyectoFinal
             {
                 MessageBox.Show("datos no validos");
             }
+
+            Compras vb = new Compras();
+            vb.Show();
+            this.Close();
 
                 //infoanterior
             //if (Regex.IsMatch(txtno.Text, "^[a-zA-Z] +$") && (Regex.IsMatch(txtCa.Text, "^[a-zA-Z]+$")

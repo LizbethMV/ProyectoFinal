@@ -1,24 +1,22 @@
 ﻿<Window x:Class="ProyectoFinal.Compras"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Compras" Height="300" Width="300">
+        Title="Compras" Height="300" Width="571.642">
     <Grid>
-        <Button Content="Ver todo" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" Width="55" Click="Button_Click_1"/>
-        <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Height="67" Width="272"/>
-        <Label Content="Nombre Proveedor:" HorizontalAlignment="Left" Margin="10,58,0,0" VerticalAlignment="Top"/>
-        <Label Content="Producto nuevo" HorizontalAlignment="Left" Margin="10,89,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtpro" HorizontalAlignment="Left" Height="23" Margin="130,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122"/>
-        <TextBox x:Name="txtnew" HorizontalAlignment="Left" Height="23" Margin="130,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label HorizontalAlignment="Left" Margin="130,26,0,217" Width="120">
-            <ComboBox Width="120"/>
-        </Label>
-        <Button Content="Buscar por id" HorizontalAlignment="Left" Margin="199,153,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button Content="Ver todo" HorizontalAlignment="Left" Margin="325,111,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_1" Height="37"/>
+        <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Height="81" Width="519"/>
+        <Label Content="Producto nuevo" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtnew" HorizontalAlignment="Left" Height="23" Margin="130,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Buscar por id" HorizontalAlignment="Left" Margin="325,18,0,0" VerticalAlignment="Top" Width="84" Height="34" Click="Button_Click_4"/>
         <Label Content="ID" HorizontalAlignment="Left" Margin="29,26,0,0" VerticalAlignment="Top"/>
         <Label Content="Compras realizadas" HorizontalAlignment="Left" Margin="85,-5,0,0" VerticalAlignment="Top" Width="109"/>
-        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="70,153,0,0" VerticalAlignment="Top" Width="54" Click="Button_Click_2"/>
-        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="29,120,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtcan" HorizontalAlignment="Left" Height="23" Margin="132,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Borrar" HorizontalAlignment="Left" Margin="143,153,0,0" VerticalAlignment="Top" Width="51" Click="Button_Click_3"/>
+        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="325,58,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_2" Height="33"/>
+        <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="29,135,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtcan" HorizontalAlignment="Left" Height="23" Margin="130,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="455,26,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click_3" Height="49"/>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="23" Margin="130,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Categoria:" HorizontalAlignment="Left" Margin="29,104,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtcate" HorizontalAlignment="Left" Height="23" Margin="130,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
