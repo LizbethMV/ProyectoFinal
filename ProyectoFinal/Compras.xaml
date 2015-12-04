@@ -10,14 +10,13 @@
         <Button Content="Buscar por id" HorizontalAlignment="Left" Margin="325,18,0,0" VerticalAlignment="Top" Width="84" Height="34" Click="Button_Click_4"/>
         <Label Content="ID" HorizontalAlignment="Left" Margin="29,26,0,0" VerticalAlignment="Top"/>
         <Label Content="Compras realizadas" HorizontalAlignment="Left" Margin="85,-5,0,0" VerticalAlignment="Top" Width="109"/>
-        <Button Content="Actualizar" HorizontalAlignment="Left" Margin="325,58,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_2" Height="33"/>
         <Label Content="Cantidad:" HorizontalAlignment="Left" Margin="29,135,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtcan" HorizontalAlignment="Left" Height="23" Margin="130,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Borrar" HorizontalAlignment="Left" Margin="455,26,0,0" VerticalAlignment="Top" Width="74" Click="Button_Click_3" Height="49"/>
         <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="23" Margin="130,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Categoria:" HorizontalAlignment="Left" Margin="29,104,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtcate" HorizontalAlignment="Left" Height="23" Margin="130,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="455,99,0,0" VerticalAlignment="Top" Width="75" Height="37" Click="Button_Click_5"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="325,61,0,0" VerticalAlignment="Top" Width="75" Height="37" Click="Button_Click_5"/>
 
     </Grid>
 </Window>

@@ -46,7 +46,6 @@ namespace ProyectoFinal
                     .SingleOrDefault(x => x.idCom == id);
                 if (prod != null)
                 {
-
                     db.compra.Add(prod);
                     db.SaveChanges();
                 }
@@ -69,6 +68,7 @@ namespace ProyectoFinal
                     {
                         db.producto.Remove(com);
                         db.SaveChanges();
+         
                         MessageBox.Show("dato eliminado satisfactoriamente ");
                     }
                 }
@@ -102,19 +102,24 @@ namespace ProyectoFinal
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            //guardar
-            if(Regex.IsMatch(txtnew.Text, @"^[a-zA-Z]+$") && (Regex.IsMatch(txtcate.Text, @"^[a-zA-Z]+$"))){
-                if (Regex.IsMatch(txtcan.Text, @"\d+$")){
-                    bdPrincipal db = new bdPrincipal();
-                    ProyectoFinal.MiBD.Compras com = new ProyectoFinal.MiBD.Compras();
-                    com.newProd = txtnew.Text;
-                    com.cantidades = int.Parse(txtcan.Text);
-                    db.compra.Add(com);
-                    db.SaveChanges();
-                }
-                else{ MessageBox.Show("solo letras en nuevo producto y categoria");}
+            //modificar
+
+            bdPrincipal db = new bdPrincipal();
+            int idPro = int.Parse(txtid.Text);
+            var registro = db.producto
+                .SingleOrDefault(x => x.idPro == idPro);
+            if (registro != null)
+            {
+                registro.NombreProdu = txtnew.Text;
+                registro.Categoria = txtcate.Text;
+                registro.Cantidad = int.Parse(txtcan.Text);
+                db.SaveChanges();
             }
-            else{ MessageBox.Show("solo numeros en cantidad");} 
+            MessageBox.Show("Modificar a sido exitoso");
+            txtnew.Clear();
+            txtcate.Clear();
+            txtcan.Clear();
+
         }
     }
 }
