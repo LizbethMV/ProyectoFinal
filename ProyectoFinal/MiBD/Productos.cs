@@ -14,5 +14,7 @@ namespace ProyectoFinal.MiBD
        public string NombreProdu { get; set; }
        public string Categoria { get; set; }
        public int Cantidad { get; set; }
+
+       
     }
 }

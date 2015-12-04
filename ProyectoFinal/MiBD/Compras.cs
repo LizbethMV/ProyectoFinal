@@ -14,5 +14,7 @@ namespace ProyectoFinal.MiBD
          public string Nombre { get; set; }
          public string newProd { get; set; }
          public int cantidades { get; set; }
+
+        
     }
 }

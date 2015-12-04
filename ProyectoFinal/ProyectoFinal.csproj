@@ -80,6 +80,9 @@
     <Compile Include="Proveedor.xaml.cs">
       <DependentUpon>Proveedor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VenFac.xaml.cs">
+      <DependentUpon>VenFac.xaml</DependentUpon>
+    </Compile>
     <Page Include="Compras.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +104,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Proveedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VenFac.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

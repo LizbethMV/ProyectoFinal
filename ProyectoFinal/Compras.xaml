@@ -17,6 +17,7 @@
         <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="23" Margin="130,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Categoria:" HorizontalAlignment="Left" Margin="29,104,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtcate" HorizontalAlignment="Left" Height="23" Margin="130,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="455,99,0,0" VerticalAlignment="Top" Width="75" Height="37" Click="Button_Click_5"/>
 
     </Grid>
 </Window>

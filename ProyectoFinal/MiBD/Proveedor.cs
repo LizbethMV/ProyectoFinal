@@ -14,5 +14,7 @@ namespace ProyectoFinal.MiBD
         public string NombrePro { get; set; }
         public string Ciudad { get; set; }
         public int Telefono { get; set; }
+
+        
     }
 }

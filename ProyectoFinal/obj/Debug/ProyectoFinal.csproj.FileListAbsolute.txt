@@ -63,3 +63,5 @@ C:\Respaldo\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.dll
 C:\Respaldo\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.dll
 C:\Respaldo\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.xml
 C:\Respaldo\Final\ProyectoFinal\ProyectoFinal\bin\Debug\EntityFramework.SqlServer.xml
+C:\Respaldo\Final\ProyectoFinal\ProyectoFinal\obj\Debug\VenFac.baml
+C:\Respaldo\Final\ProyectoFinal\ProyectoFinal\obj\Debug\VenFac.g.cs

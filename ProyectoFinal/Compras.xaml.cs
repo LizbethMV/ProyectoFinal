@@ -28,6 +28,7 @@ namespace ProyectoFinal
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            //ver todo
             bdPrincipal bd = new bdPrincipal();
             var registros = from s in bd.producto
                             select s;
@@ -41,66 +42,79 @@ namespace ProyectoFinal
             {
                 bdPrincipal db = new bdPrincipal();
                 int id = int.Parse(txtid.Text);
-                var ar = db.producto
-                    .SingleOrDefault(x => x.idPro == id);
-                if (ar != null)
+                var prod = db.compra
+                    .SingleOrDefault(x => x.idCom == id);
+                if (prod != null)
                 {
 
-                    db.producto.Add(ar);
+                    db.compra.Add(prod);
                     db.SaveChanges();
                 }
             }
-            //if (Regex.IsMatch(txtId.Text, @"\d+$"))
-            //{
-            //    demoEF db = new demoEF();
-            //    int id = int.Parse(txtId.Text);
-            //    var emp = db.Empleados
-            //                .SingleOrDefault(x => x.id == id);
-
-            //    if (emp != null)
-            //    {
-            //        //eliminar el registros
-            //        db.Empleados.Remove(emp);
-            //        db.SaveChanges();
-            //    }
-            //}
-            //else { MessageBox.Show("Solo numeros #id"); }
+            else
+            {
+                MessageBox.Show("Solo numeros en id");}
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            //Borra
-            if (Regex.IsMatch(txtnew.Text, @"^[a-zA-Z]+$")){
-            if (Regex.IsMatch(txtcan.Text, @"\d+$")){
-                bdPrincipal db = new bdPrincipal();
-                int cant = int.Parse(txtcan.Text);
-                var prod = db.producto
-                    .SingleOrDefault(x=> x.Cantidad == cant);
-                if (prod != null){
-                    db.producto.Remove(prod);
-                    db.SaveChanges();
-                      }
-                   }
-              else { MessageBox.Show("solo letras en  #producto"); }
+            //Borrar
+                if (Regex.IsMatch(txtid.Text, @"\d+$"))
+                {
+                    bdPrincipal db = new bdPrincipal();
+                    int id = int.Parse(txtid.Text);
+                    var com = db.producto
+                        .SingleOrDefault(x => x.idPro == id);
+                    if (com != null)
+                    {
+                        db.producto.Remove(com);
+                        db.SaveChanges();
+                        MessageBox.Show("dato eliminado satisfactoriamente ");
+                    }
+                }
+                else { MessageBox.Show("solo capture numeros "); }
+                txtid.Clear();
+        
             }
-            else { MessageBox.Show("Solo numeros en #cantidad"); }
-        }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            bdPrincipal bd = new bdPrincipal();
-            int id = int.Parse(txtid.Text);
-            var registros = from s in bd.producto
-                            where s.idPro == id
-                            select new
-                            {
-                                s.idPro,
-                                s.NombreProdu,
-                                s.Categoria,
-                                s.Cantidad,
-                                
-                            };
-            dbgrid.ItemsSource = registros.ToList();
+            //buscarid
+            if (Regex.IsMatch(txtid.Text, @"\d+$"))
+            {
+
+                bdPrincipal bd = new bdPrincipal();
+                int id = int.Parse(txtid.Text);
+                var registros = from s in bd.producto
+                                where s.idPro == id
+                                select new
+                                {
+                                    s.idPro,
+                                    s.NombreProdu,
+                                    s.Categoria,
+                                    s.Cantidad,
+
+                                };
+                dbgrid.ItemsSource = registros.ToList();
+            }
+            else { MessageBox.Show("Ingresa solo numeros en id"); }
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            //guardar
+            if(Regex.IsMatch(txtnew.Text, @"^[a-zA-Z]+$") && (Regex.IsMatch(txtcate.Text, @"^[a-zA-Z]+$"))){
+                if (Regex.IsMatch(txtcan.Text, @"\d+$")){
+                    bdPrincipal db = new bdPrincipal();
+                    ProyectoFinal.MiBD.Compras com = new ProyectoFinal.MiBD.Compras();
+                    com.newProd = txtnew.Text;
+                    com.cantidades = int.Parse(txtcan.Text);
+                    db.compra.Add(com);
+                    db.SaveChanges();
+                }
+                else{ MessageBox.Show("solo letras en nuevo producto y categoria");}
+            }
+            else{ MessageBox.Show("solo numeros en cantidad");} 
         }
     }
 }
