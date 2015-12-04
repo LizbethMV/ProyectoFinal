@@ -141,6 +141,12 @@ namespace ProyectoFinal {
             return;
             case 3:
             this.txtelimi = ((System.Windows.Controls.Button)(target));
+            
+            #line 13 "..\..\Factura.xaml"
+            this.txtelimi.Click += new System.Windows.RoutedEventHandler(this.txtelimi_Click);
+            
+            #line default
+            #line hidden
             return;
             case 4:
             this.txtguar = ((System.Windows.Controls.Button)(target));

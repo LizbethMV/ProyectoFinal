@@ -52,30 +52,31 @@ namespace ProyectoFinal
             }
             else
             {
-                MessageBox.Show("Solo numeros en id");}
+                MessageBox.Show("Solo numeros en id");
+            }
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             //Borrar
-                if (Regex.IsMatch(txtid.Text, @"\d+$"))
+            if (Regex.IsMatch(txtid.Text, @"\d+$"))
+            {
+                bdPrincipal db = new bdPrincipal();
+                int id = int.Parse(txtid.Text);
+                var com = db.producto
+                    .SingleOrDefault(x => x.idPro == id);
+                if (com != null)
                 {
-                    bdPrincipal db = new bdPrincipal();
-                    int id = int.Parse(txtid.Text);
-                    var com = db.producto
-                        .SingleOrDefault(x => x.idPro == id);
-                    if (com != null)
-                    {
-                        db.producto.Remove(com);
-                        db.SaveChanges();
-         
-                        MessageBox.Show("dato eliminado satisfactoriamente ");
-                    }
+                    db.producto.Remove(com);
+                    db.SaveChanges();
+
+                    MessageBox.Show("dato eliminado satisfactoriamente ");
                 }
-                else { MessageBox.Show("solo capture numeros "); }
-                txtid.Clear();
-        
             }
+            else { MessageBox.Show("solo capture numeros "); }
+            txtid.Clear();
+
+        }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
@@ -103,7 +104,8 @@ namespace ProyectoFinal
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             //modificar
-
+            if (Regex.IsMatch(txtnew.Text, "^[a-zA-Z]+$") && (Regex.IsMatch(txtcate.Text, "^[a-zA-Z]+$")
+            && (Regex.IsMatch(txtcan.Text, @"^\d+$") && (Regex.IsMatch(txtid.Text, @"^\d+$"))))){
             bdPrincipal db = new bdPrincipal();
             int idPro = int.Parse(txtid.Text);
             var registro = db.producto
@@ -121,5 +123,6 @@ namespace ProyectoFinal
             txtcan.Clear();
 
         }
+    }
     }
 }

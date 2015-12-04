@@ -31,5 +31,19 @@ namespace ProyectoFinal
             ov.Show();
             this.Close();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Factura o = new Factura();
+            o.Show();
+            this.Close();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Compras t = new Compras();
+            t.Show();
+            this.Close();
+        }
     }
 }

@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Compras" Height="300" Width="571.642">
     <Grid>
-        <Button Content="Ver todo" HorizontalAlignment="Left" Margin="325,111,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_1" Height="37"/>
+        <Button Content="Consultar" HorizontalAlignment="Left" Margin="325,111,0,0" VerticalAlignment="Top" Width="84" Click="Button_Click_1" Height="37"/>
         <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Height="81" Width="519"/>
         <Label Content="Producto nuevo" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtnew" HorizontalAlignment="Left" Height="23" Margin="130,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

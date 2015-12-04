@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -63,12 +65,18 @@
     <Compile Include="Compras.xaml.cs">
       <DependentUpon>Compras.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invoice.cs" />
     <Compile Include="MiBD\bdPrincipal.cs" />
     <Compile Include="MiBD\Compras.cs" />
     <Compile Include="MiBD\Productos.cs" />
     <Compile Include="MiBD\Proveedor.cs" />
     <Compile Include="MiBD\Usuario.cs" />
-    <Compile Include="MiBD\Ventas.cs" />
     <Compile Include="Migrations\201512012256497_all.cs" />
     <Compile Include="Migrations\201512012256497_all.Designer.cs">
       <DependentUpon>201512012256497_all.cs</DependentUpon>
@@ -126,6 +134,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201512012256497_all.resx">
       <DependentUpon>201512012256497_all.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +156,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="nuevo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
