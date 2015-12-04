@@ -39,6 +39,70 @@ namespace ProyectoFinal {
     /// </summary>
     public partial class Factura : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 10 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox texbox1;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 11 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.TextBox tex2;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 13 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button txtelimi;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 14 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button txtguar;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 15 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button txtsalir;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 16 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button txtbus;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 17 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button txtagre;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 20 "..\..\Factura.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Label label5;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -70,12 +134,40 @@ namespace ProyectoFinal {
             switch (connectionId)
             {
             case 1:
+            this.texbox1 = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 2:
+            this.tex2 = ((System.Windows.Controls.TextBox)(target));
+            return;
+            case 3:
+            this.txtelimi = ((System.Windows.Controls.Button)(target));
+            return;
+            case 4:
+            this.txtguar = ((System.Windows.Controls.Button)(target));
+            return;
+            case 5:
+            this.txtsalir = ((System.Windows.Controls.Button)(target));
+            return;
+            case 6:
+            this.txtbus = ((System.Windows.Controls.Button)(target));
             
-            #line 17 "..\..\Factura.xaml"
-            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
+            #line 16 "..\..\Factura.xaml"
+            this.txtbus.Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
             
             #line default
             #line hidden
+            return;
+            case 7:
+            this.txtagre = ((System.Windows.Controls.Button)(target));
+            
+            #line 17 "..\..\Factura.xaml"
+            this.txtagre.Click += new System.Windows.RoutedEventHandler(this.txtagre_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 8:
+            this.label5 = ((System.Windows.Controls.Label)(target));
             return;
             }
             this._contentLoaded = true;

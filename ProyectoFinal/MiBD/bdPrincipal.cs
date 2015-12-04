@@ -13,6 +13,10 @@ namespace ProyectoFinal.MiBD
          public DbSet<Proveedor> proveedores { get; set; }
          public DbSet<Productos> producto { get; set; }
          public DbSet<Compras> compra { get; set; }
-         public DbSet<Ventas> venta { get; set; }
+
+         // public DbSet<Registro> SalesPersons { get; set; }
+         public DbSet<invoice> invoices { get; set; }
+
+         
     }
 }
